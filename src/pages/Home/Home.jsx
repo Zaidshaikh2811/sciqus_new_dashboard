@@ -42,12 +42,12 @@ const SupportDashboard = () => {
                     >
                         {sidebarOpen ? <X size={20} /> : <Menu size={20} />}
                     </button>
-                    <h1 className="logo">Support Portal</h1>
+                    <h1 className="logo">sciqus </h1>
                 </div>
                 <div className="header-right">
                     <div className="user-profile">
-                        <div className="avatar">JD</div>
-                        <span>John Doe</span>
+                        <div className="avatar">User</div>
+                        <span>User</span>
                     </div>
                 </div>
             </header>
@@ -130,15 +130,12 @@ const SupportDashboard = () => {
                             </div>
                         </section>
 
-                        {/* FAQ Section */}
+                        {/* FAQ Accordion Section */}
                         <section className="faq-section">
                             <h2>Frequently Asked Questions</h2>
                             <div className="faq-list">
-                                {faqs.map((faq, index) => (
-                                    <div key={index} className="faq-item">
-                                        <ChevronRight size={16} />
-                                        <span>{faq}</span>
-                                    </div>
+                                {faqs.map((question, idx) => (
+                                    <FAQItem key={idx} question={question} />
                                 ))}
                             </div>
                         </section>
@@ -150,5 +147,21 @@ const SupportDashboard = () => {
         </div>
     );
 };
+
+// FAQ Accordion Item Component
+function FAQItem({ question }) {
+    const [open, setOpen] = useState(false);
+    return (
+        <div className={`faq-item${open ? ' open' : ''}`} onClick={() => setOpen(!open)}>
+            {open ? <ChevronDown size={18} /> : <ChevronRight size={18} />}
+            <span>{question}</span>
+            {open && (
+                <div className="faq-answer">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam enim.</span>
+                </div>
+            )}
+        </div>
+    );
+}
 
 export default SupportDashboard;

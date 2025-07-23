@@ -317,6 +317,14 @@
   border-bottom: none;
 }
 
+.faq-answer {
+  margin-top: 8px;
+  padding-left: 30px;
+  color: #343a40;
+  font-size: 13px;
+  transition: max-height 0.2s;
+}
+
 @media (max-width: 768px) {
   .main-content {
     padding: 20px;
@@ -331,16 +339,40 @@
     grid-template-columns: 1fr;
   }
 
-  .table-header,
-  .table-row {
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
+  .tickets-section {
+    min-width: 400px;
+    overflow-x: auto;
+    box-sizing: border-box;
   }
 
-  .header-cell:nth-child(3),
-  .header-cell:nth-child(4),
-  .cell:nth-child(3),
-  .cell:nth-child(4) {
-    display: none;
+  .tickets-table {
+    min-width: 380px;
+    overflow-x: auto;
+  }
+
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr 1fr 1fr auto;
+    gap: 8px;
+    min-width: 360px;
+  }
+
+
+  .faq-section {
+    overflow-x: auto;
+    min-width: 340px;
+    padding-bottom: 8px;
+  }
+
+  .faq-list {
+    min-width: 320px;
+    display: block;
+  }
+
+  .faq-item {
+    min-width: 280px;
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
   }
 }
