@@ -1,0 +1,73 @@
+@import '../../_variable.scss';
+
+.ask-page {
+  padding: 2rem;
+  max-width: 500px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.07);
+  color: #222;
+  text-align: center;
+}
+
+.ask-page h2 {
+  color: $primary-color;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.ask-desc {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.ask-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ask-form textarea {
+  padding: 0.7rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f9f9f9;
+  transition: border 0.2s;
+  min-height: 90px;
+  resize: vertical;
+}
+
+.ask-form textarea:focus {
+  border: 1.5px solid $primary-color;
+  outline: none;
+  background: #fff;
+}
+
+.ask-form button {
+  background: $primary-color;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+
+.ask-form button:hover {
+  background: darken($primary-color, 10%);
+}
+
+.ask-success {
+  background: #eafbe7;
+  color: #219150;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  margin-top: 1.5rem;
+}

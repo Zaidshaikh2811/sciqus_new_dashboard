@@ -1,0 +1,72 @@
+@import '../../_variable.scss';
+
+.proposal-page {
+  padding: 2rem;
+
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.07);
+  color: #222;
+}
+
+.proposal-page h2 {
+  margin-bottom: 1.5rem;
+  color: $primary-color;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.proposal-table-wrapper {
+  overflow-x: auto;
+}
+
+.proposal-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fafbfc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.04);
+}
+
+.proposal-table th, .proposal-table td {
+  padding: 1rem 0.8rem;
+  text-align: left;
+}
+
+.proposal-table th {
+  background: #f3f6fa;
+  color: $primary-color;
+  font-weight: 600;
+  font-size: 1.05rem;
+  border-bottom: 2px solid #e3e7ed;
+}
+
+.proposal-table tr {
+  border-bottom: 1px solid #e3e7ed;
+}
+
+.proposal-table tr:last-child {
+  border-bottom: none;
+}
+
+.proposal-table td {
+  color: #444;
+  font-size: 1rem;
+}
+
+.view-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: $primary-color;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+
+.view-btn:hover {
+  background: lighten($primary-color, 45%);
+}
