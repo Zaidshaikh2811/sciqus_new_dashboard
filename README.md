@@ -1,12 +1,61 @@
-# React + Vite
+# Sciqus New Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a modern dashboard application built with React and Vite. It includes multiple pages such as Home, Dashboard, Catalog, FAQ, Contact, My Tickets, Raise Ticket, Proposal, Offers, Knowledge, and Ask.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Prerequisites
+- Node.js (v16 or above recommended)
+- npm or yarn
 
-## Expanding the ESLint configuration
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd sciqus_new_dashboard
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Running the App
+To start the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+The app will be available at `http://localhost:5173` by default.
+
+### Building for Production
+To build the app for production:
+```bash
+npm run build
+# or
+yarn build
+```
+
+### Project Structure
+- `src/` - Main source code
+  - `pages/` - All page components (e.g., Home, Dashboard, FAQ, etc.)
+  - `_variable.scss` - SCSS variables for consistent styling
+  - `assets/` - Static assets
+- `public/` - Public files
+- `index.html` - Main HTML file
+
+### Styling
+- SCSS is used for styling. Common variables are defined in `src/_variable.scss`.
+
+### Contribution
+Feel free to open issues or submit pull requests for improvements or bug fixes.
+
+### License
+This project is licensed under the MIT License.
+
